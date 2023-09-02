@@ -562,3 +562,28 @@ body {
     overflow:hidden;
     overflow-y: auto;
 }
+
+
+@media (max-width: 768px) {
+    /* ... Existing CSS for smaller screens ... */
+
+    .footer {
+        position: fixed; /* Keep the footer fixed at the bottom */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--footer-color);
+        color: var(--paragraph-color);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        padding-bottom: 100px; /* Add padding to the content to push it above the footer */
+    }
+
+    body {
+        overflow: hidden; /* Hide horizontal overflow to prevent background image leakage */
+        overflow-y: auto;
+    }
+}
