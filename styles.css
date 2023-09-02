@@ -378,14 +378,6 @@ p, li {
         overflow-y: auto;
     }
 
-    .footer {
-        position: sticky;
-        bottom: 0;
-        background-color: var(--footer-color);
-        color: var(--paragraph-color);
-        padding: 20px;
-        text-align: center;
-    }
 }
 
 @media (min-width: 1081px) {
@@ -566,4 +558,21 @@ p {
 body {
     overflow:hidden;
     overflow-y: auto;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+.footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--footer-color);
+    color: var(--paragraph-color);
+    padding: 20px;
+    text-align: center;
+}
 }
