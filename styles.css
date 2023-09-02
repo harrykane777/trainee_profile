@@ -559,7 +559,7 @@ body {
     text-align: center;
     font-family: 'Bahnschrift', cursive;
     height: 100px; 
-    position: fixed; 
+    position: flex; 
     bottom: 0; 
     width: 100%; 
 }
