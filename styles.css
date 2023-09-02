@@ -365,8 +365,20 @@ p, li {
     }
 
     body {
+        position: relative; 
         overflow:hidden;
         overflow-y: auto;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--footer-color);
+        color: var(--paragraph-color);
+        padding: 20px;
+        text-align: center;
     }
 
 }
@@ -549,53 +561,4 @@ p {
 body {
     overflow:hidden;
     overflow-y: auto;
-}
-
-
-@media (max-width: 768px) {
-    /* Modify your existing styles for mobile screens here */
-    .introduction p {
-        width: 80%;
-    }
-
-    .footer {
-        padding: 20%;
-    }
-
-    .imageContainer {
-        width: 90%;
-        padding-top: 55%;
-    }
-
-    /* Add or modify styles for mobile menu and sidebar */
-    .menu button {
-        display: none;
-    }
-
-    .menu .icon {
-        display: block;
-    }
-
-    .menu.responsive .icon {
-        margin-right: 0;
-    }
-
-    .menu.responsive ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--primary-color);
-        padding: 10px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-    }
-
-    /* Add or modify styles for the sidebar menu */
-    .sidebar {
-        display: none;
-    }
-    
-    /* Add or modify styles for other elements that need to adapt to mobile screens */
 }
