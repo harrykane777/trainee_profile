@@ -460,6 +460,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    height: 250px;
 }
 
 .aboutme {
@@ -484,6 +485,7 @@ p {
 
 
 .aboutme ul li {
+    font-size: 20px;
     margin: 5px 0;
     padding-left: 30px;
     position: relative; 
