@@ -22,7 +22,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 70px;
 }
 
 .menu button {
@@ -190,8 +190,8 @@ a:link {
 }
 .videoContainer {
     text-align: center;
-    padding: 30px;
-    padding-bottom: 210px;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .default {
@@ -383,12 +383,12 @@ p, li {
 
 }
 
-
 #contactscontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    overflow-y: auto;
 }
 
 #contactscontainer a {
@@ -406,7 +406,7 @@ p, li {
 }
 
 #contactscontainer img {
-    width: 130px; 
+    width: 120px; 
     height: auto;
 }
 
@@ -438,7 +438,7 @@ p, li {
 }
 
 #contactscontainer img {
-    width: 150px; 
+    width: 130px; 
     height: auto;
 }
 
@@ -512,19 +512,6 @@ p {
     margin-right: 10px;
 }
 
-.footer {
-    background-color: var(--footer-color);
-    color: var(--paragraph-color);
-    padding: 20px;
-    text-align: center;
-    font-family: 'Bahnschrift', cursive;
-    height: 100px; 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
-}
-
-
 .menu button {
 
     margin-right: 35px;
@@ -536,6 +523,7 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-top: 20px;
 }
 
 .vertical-list li {
