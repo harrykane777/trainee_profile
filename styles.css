@@ -378,6 +378,11 @@ p, li {
     .sidebar {
         display: none;
     }
+
+    body {
+        overflow:hidden;
+        overflow-y: auto;
+    }
 }
 
 
@@ -557,7 +562,3 @@ p {
     margin-right: 10px; 
 }
 
-body {
-    overflow:hidden;
-    overflow-y: auto;
-}
