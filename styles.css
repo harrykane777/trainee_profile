@@ -252,7 +252,10 @@ p, li {
         background-position: center center;
         border: 5px solid #1b0000;
     }
-
+    ul.horizontal-list li {
+        display: inline-block;
+        margin-right: 30px; 
+    }
     .default {
         padding:20px;
         width:auto;
@@ -361,6 +364,7 @@ p, li {
         margin-bottom: 30px;
     }
 
+    
     body {
         overflow:hidden;
         overflow-y: auto;
