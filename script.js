@@ -23,19 +23,18 @@ function createSnowflake() {
     const rotation = Math.random() * 360;
     snowflake.style.transform = `rotate(${rotation}deg)`;
 
-    const startLeft = Math.random() * window.innerWidth;
+    const startLeft = Math.random() * (window.innerWidth - size); 
     snowflake.style.left = startLeft + "px";
 
     snowflake.style.top = `-${size}px`;
 
-    const animationDuration = Math.random() * 5 + 3; // Random duration between 3 to 8 seconds
+    const animationDuration = Math.random() * 5 + 3; 
 
-    // Animate the snowflake falling
     snowflake.style.animation = `snowfall ${animationDuration}s linear infinite`;
 
     snowflake.addEventListener("animationiteration", () => {
-        // When a snowflake reaches the bottom, reset its position to the top
-        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        const newLeft = Math.random() * (window.innerWidth - size); 
+        snowflake.style.left = newLeft + "px";
         snowflake.style.top = `-${size}px`;
     });
 }
