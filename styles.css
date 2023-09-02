@@ -377,6 +377,15 @@ p, li {
         margin-top: 20px;
         overflow-y: auto;
     }
+
+    .footer {
+        position: sticky;
+        bottom: 0;
+        background-color: var(--footer-color);
+        color: var(--paragraph-color);
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1081px) {
