@@ -1,0 +1,554 @@
+:root {
+    --primary-color: #bbd3d7;
+    --button-color: #21566f9f;
+    --dropdown-button-color: #425c69;
+    --button-hover-color:  #354baa9c;
+    --dropdown-button-hover-color: #355eaa;
+    --background-color: #3d3939;
+    --background-color-2: #2e2c2c;
+    --background-section-color: #353232;
+    --footer-color: #55b3e2;
+    --h1-color: #4488cc;
+    --h2-color: #607ad0;
+    --h3-color: #8497cc;
+    --paragraph-color: #0d202b;
+    --sidebar-background-color: #548de1;
+    --title-color: #3579aa;
+}
+
+.menu {
+    background-color:#55b3e2; 
+    color: var(--paragraph-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.menu button {
+    background-color: var(--button-color);
+    color: var(--paragraph-color);
+    width: 150px;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Lobster', cursive; 
+    font-size: larger;
+    transition: background-color 0.15s ease;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu button:hover {
+    background-color: var(--button-hover-color);
+    font-size: 150%;
+    transition: all 0.3s ease;
+}
+
+.menu button:not(:hover) {
+    font-size: 120%;
+    transition: all 0.3s ease;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: var(--paragraph-color);
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: var(--dropdown-button-color);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-button-color);
+    color: var(--paragraph-color);
+    min-width: 160px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: var(--paragraph-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--dropdown-button-hover-color);
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.title {
+    background-color: var(--background-color-2);
+    padding: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--footer-color);
+    color: var(--paragraph-color);
+    padding: 20px;
+    display: block;
+    justify-content: center;
+    font-family: 'Bahnschrift', cursive;
+    text-align: center;
+    height: 100px;
+}
+
+ul.horizontal-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.hobbies li {
+    color: #1b0000;
+    font-family: 'Bahnschrift';
+
+}
+  
+ul.horizontal-list li {
+    display: inline-block;
+    margin-right: 30px; 
+}
+
+.footer a:visited {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+
+.footer a:link {
+    color: var(--paragraph-color);
+}
+a:link {
+    color: var(--paragraph-color);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 48%;
+    padding-top: 20%;
+    background-image: url('https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/09/28162922/FC-BARCELONA3.jpg');
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #1b0000;
+}
+.introduction {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--primary-color);
+}
+.introduction p {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bahnschrift';
+}
+.videoContainer {
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 210px;
+}
+
+.default {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 30px;
+    color: #1b0000;
+}
+
+.default h2 {
+    color: #1b0000;
+}
+.default p {
+    font-family: 'Bahnschrift';
+    color: #1b0000;
+}
+
+.sectionTitle {
+    background-color: var(--title-color);
+    padding:30px;
+    width:auto;
+    text-align: left;
+    text-align: center;
+}
+
+.sectionTitle h2 {
+    color: var(--paragraph-color);
+}
+
+h1 {
+    color: var(--h1-color);
+}
+h2 {
+    color: var(--h2-color);
+}
+h3 {
+    color: var(--h3-color);
+}
+p, li {
+    color: var(--paragraph-color);
+    text-align: inherit;
+    list-style-position: inside;
+}
+
+
+@media (max-width: 1080px) {
+    .introduction p {
+        width: 80%;
+    }
+
+    .imageContainer {
+        width: 90%;
+        padding-top: 55%;
+        background-image: url('https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/09/28162922/FC-BARCELONA3.jpg');
+        background-size: cover;
+        background-position: center center;
+        border: 5px solid #1b0000;
+    }
+
+    .default {
+        padding:20px;
+        width:auto;
+        text-align: left;
+        color: var(--primary-color);
+    }
+    .default ul {
+        padding-left: 15px;
+        color: #1b0000;
+    }
+    .default ul ul {
+        padding-left: 20px;
+        color: #1b0000;
+    }
+    .default li {
+        text-indent: -15px;
+        color: #1b0000;
+    }
+    
+    .menu button {
+        display: none;
+    }
+
+    .menu .icon {
+        display: block;
+        color: var(--paragraph-color);
+        font-size: 36px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .menu.responsive .icon {
+        margin-right: 0;
+    }
+
+    .menu.responsive ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-color);
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    
+
+    .menu.responsive li {
+        margin: 10px 0;
+    }
+
+    .menu.responsive li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* sidebar thing */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -40px;
+        bottom: 0;
+        width: 200px;
+        background-color: var(--sidebar-background-color);
+        color: var(--paragraph-color);
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(200px);
+        height: 100vh; 
+        z-index: 9999;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        font-size: 20px;
+        color: var(--paragraph-color);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu.responsive .icon:focus + .sidebar {
+        transform: translateX(-200px);
+    }
+
+    .sidebar ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a {
+        color: var(--paragraph-color);
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1081px) {
+    .menu .icon {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex !important;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Add this to your existing CSS or create a new stylesheet */
+
+#contactscontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#contactscontainer a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+#contactscontainer a:hover {
+    transform: scale(1.2); 
+}
+
+#contactscontainer img {
+    width: 130px; 
+    height: auto;
+}
+
+.hovermsg {
+    margin-top: 10px; 
+    font-size: 18px; 
+}
+
+
+#contactscontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contactscontainer a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+#contactscontainer a:hover {
+    transform: scale(1.2); 
+}
+
+#contactscontainer img {
+    width: 150px; 
+    height: auto;
+}
+
+.hovermsg {
+    margin-top: 10px;
+    font-size: 18px; 
+}
+
+body {
+    font-size: 18px;
+    font-family: "Bahnschrift", Arial, sans-serif;
+    background-color: #E6F7FF; 
+    margin: 0;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+
+.aboutme-box {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #80b3d7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.aboutme {
+    margin: 0;
+}
+
+h4 {
+    color: rgb(23, 77, 136);
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+.aboutme ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 80px; 
+}
+
+
+.aboutme ul li {
+    margin: 5px 0;
+    padding-left: 30px;
+    position: relative; 
+}
+
+
+.aboutme ul li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/018/818/848/original/soccer-ball-cartoon-icon-png.png'); /* Specify the URL of your soccer ball image */
+    background-size: contain;
+    position: absolute; 
+    left: 0; 
+    top: 2px; 
+    margin-right: 10px;
+}
+
+.page-content {
+    max-height: calc(100vh - (100px));
+    overflow-y: auto; 
+}
+
+.footer {
+    background-color: var(--footer-color);
+    color: var(--paragraph-color);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bahnschrift', cursive;
+    height: 100px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+
+.menu button {
+
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+
+.vertical-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-list li {
+    margin-bottom: 80px;
+}
+
+.vertical-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.vertical-list img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}

@@ -1,0 +1,22 @@
+@keyframes snowfall {
+    0% {
+        transform: translateY(0%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://clipart-library.com/images/pToArjn9c.png');
+    background-size: contain;
+    pointer-events: none;
+    animation-timing-function: linear;
+}
+
+

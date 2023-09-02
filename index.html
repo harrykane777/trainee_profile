@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="laptop.css">
+    <title>Issac An | Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahnschrift">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-image: url('future.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="snowfall-container"></div>
+    <!-- Menu Bar -->
+    <div class="menu" id="menuList">
+        <a href="index.html"><button>Home</button></a>
+        <a href="hobbies.html"><button>Hobbies</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+        <div class="icon" onclick="toggleMenu();">&#9776;</div>
+    </div>
+
+    <!-- Sidebar Menu (Mobile) -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="introduction">
+        <h1>Issac An  &#x1F1E6;&#x1F1FA; &#x1F1F0;&#x1F1F7;</h1>
+        <h3>Second year Computer Science student at UNSW Sydney</h3>
+        <p style="font-size: 22px;">Hello, I am Issac! I am in my second year of uni<br><br>
+            This website is to showcase a bit about myself including hobbies, my past times, contacts and just random things!
+            <br>
+            <span class="line-through">(For the CSESoc trainee program)</span>
+
+        </p>
+    </div>
+
+    <div class="aboutme-box">
+        <div class="aboutme">
+            <h2>Quick About Me</h2>
+            <ul>
+                <li>Nationality: Australia (Born in Seoul, Korea)</li>
+                <li>Age: 19 years old</li>
+                <li>Favourite food: sushi/sashimi/seafood</li>
+                <li>Favourite color: red</li>
+                <li>Favourite COMP course: COMP3311 or COMP2511</li>
+                <li>I am not a creative person.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div class="videoContainer">
+        <h3>Photo of me at the top of the Lotte Tower in Seoul, Korea</h3>
+        <img src="kor.jpg" alt="Description of the image" width="400" height="450">
+    </div>
+
+    <div class="footer">
+        <p>© Issac An, 2023</p>
+        <ul class="horizontal-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
