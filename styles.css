@@ -243,16 +243,7 @@ p, li {
     .introduction p {
         width: 80%;
     }
-    .footer {
-        background-color: var(--footer-color);
-        color: var(--paragraph-color);
-        padding: 10px;
-        display: block;
-        justify-content: center;
-        font-family: 'Bahnschrift', cursive;
-        text-align: center;
-        height: 70px;
-    }
+
     .aboutme-box {
         width: 400px;
         margin: 0 auto;
@@ -261,7 +252,7 @@ p, li {
         border: 1px solid #ccc;
         border-radius: 5px;
         text-align: center;
-        height: 100px;
+        height: 200px;
     }
 
     .imageContainer {
