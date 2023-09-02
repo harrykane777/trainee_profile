@@ -376,14 +376,12 @@ p, li {
     }
 }
 
-/* Add this to your existing CSS or create a new stylesheet */
 
 #contactscontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-
 }
 
 #contactscontainer a {
@@ -415,7 +413,7 @@ p, li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #contactscontainer a {
@@ -551,4 +549,9 @@ p {
     width: 40px; 
     height: auto; 
     margin-right: 10px; 
+}
+
+body {
+    overflow:hidden;
+    overflow-y: auto;
 }
