@@ -551,3 +551,15 @@ body {
     overflow:hidden;
     overflow-y: auto;
 }
+
+.footer {
+    background-color: var(--footer-color);
+    color: var(--paragraph-color);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bahnschrift', cursive;
+    height: 100px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
