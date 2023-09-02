@@ -252,10 +252,7 @@ p, li {
         background-position: center center;
         border: 5px solid #1b0000;
     }
-    ul.horizontal-list li {
-        display: inline-block;
-        margin-right: 30px; 
-    }
+
     .default {
         padding:20px;
         width:auto;
@@ -365,20 +362,8 @@ p, li {
     }
 
     body {
-        position: relative; 
         overflow:hidden;
         overflow-y: auto;
-    }
-
-    .footer {
-        position: flex;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: var(--footer-color);
-        color: var(--paragraph-color);
-        padding: 20px;
-        text-align: center;
     }
 
 }
@@ -561,29 +546,4 @@ p {
 body {
     overflow:hidden;
     overflow-y: auto;
-}
-
-
-@media (max-width: 768px) {
-    /* ... Existing CSS for smaller screens ... */
-
-    .footer {
-        position: fixed; /* Keep the footer fixed at the bottom */
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: var(--footer-color);
-        color: var(--paragraph-color);
-        padding: 20px;
-        text-align: center;
-    }
-
-    .content-wrapper {
-        padding-bottom: 100px; /* Add padding to the content to push it above the footer */
-    }
-
-    body {
-        overflow: hidden; /* Hide horizontal overflow to prevent background image leakage */
-        overflow-y: auto;
-    }
 }
