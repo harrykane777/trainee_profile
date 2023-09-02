@@ -244,6 +244,17 @@ p, li {
         width: 80%;
     }
 
+    .aboutme-box {
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #80b3d7;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        height: 100px;
+    }
+
     .imageContainer {
         width: 90%;
         padding-top: 55%;
@@ -369,7 +380,7 @@ p, li {
         overflow:hidden;
         overflow-y: auto;
     }
-    
+
     #contactscontainer {
         display: flex;
         justify-content: space-around;
