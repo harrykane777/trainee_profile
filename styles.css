@@ -363,7 +363,9 @@ p, li {
 
     body {
         overflow:hidden;
+        overflow-y: auto;
     }
+
 }
 
 @media (min-width: 1081px) {
@@ -379,10 +381,6 @@ p, li {
         display: none;
     }
 
-    body {
-        overflow:hidden;
-        overflow-y: auto;
-    }
 }
 
 
@@ -557,3 +555,7 @@ p {
     margin-right: 10px; 
 }
 
+body {
+    overflow:hidden;
+    overflow-y: auto;
+}

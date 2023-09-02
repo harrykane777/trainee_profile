@@ -11,6 +11,7 @@ function toggleMenu() {
 }
 
 
+// JavaScript function to create and animate snowflakes within the menu bar width
 function createSnowflake() {
     const snowflake = document.createElement("div");
     snowflake.className = "snowflake";
@@ -23,21 +24,27 @@ function createSnowflake() {
     const rotation = Math.random() * 360;
     snowflake.style.transform = `rotate(${rotation}deg)`;
 
-    const startLeft = Math.random() * (window.innerWidth - size); 
+    // Get the dimensions of the menu bar
+    const menuBar = document.getElementById("menuList");
+    const menuBarWidth = menuBar.clientWidth;
+
+    // Calculate the starting left position within the menu bar width
+    const startLeft = Math.random() * (menuBarWidth - size);
     snowflake.style.left = startLeft + "px";
 
     snowflake.style.top = `-${size}px`;
 
-    const animationDuration = Math.random() * 5 + 3; 
-
+    const animationDuration = Math.random() * 5 + 3; // Random duration between 3 to 8 seconds
     snowflake.style.animation = `snowfall ${animationDuration}s linear infinite`;
 
     snowflake.addEventListener("animationiteration", () => {
-        const newLeft = Math.random() * (window.innerWidth - size); 
+        const newLeft = Math.random() * (menuBarWidth - size);
         snowflake.style.left = newLeft + "px";
         snowflake.style.top = `-${size}px`;
     });
 }
+
+
 
 // Create snowflakes at regular intervals
 setInterval(createSnowflake, 1500); 
