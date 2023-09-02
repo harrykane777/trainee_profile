@@ -514,11 +514,6 @@ p {
     margin-right: 10px;
 }
 
-.page-content {
-    max-height: calc(100vh - (100px));
-    overflow-y: auto; 
-}
-
 .footer {
     background-color: var(--footer-color);
     color: var(--paragraph-color);
