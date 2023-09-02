@@ -243,7 +243,16 @@ p, li {
     .introduction p {
         width: 80%;
     }
-
+    .footer {
+        background-color: var(--footer-color);
+        color: var(--paragraph-color);
+        padding: 20%;
+        display: block;
+        justify-content: center;
+        font-family: 'Bahnschrift', cursive;
+        text-align: center;
+        height: 100px;
+    }
     .aboutme-box {
         width: 70%;
         margin: 0 auto;
