@@ -252,10 +252,7 @@ p, li {
         background-position: center center;
         border: 5px solid #1b0000;
     }
-    ul.horizontal-list li {
-        display: inline-block;
-        margin-right: 30px; 
-    }
+
     .default {
         padding:20px;
         width:auto;
@@ -364,7 +361,6 @@ p, li {
         margin-bottom: 30px;
     }
 
-    
     body {
         overflow:hidden;
         overflow-y: auto;
@@ -550,16 +546,4 @@ p {
 body {
     overflow:hidden;
     overflow-y: auto;
-}
-
-.footer {
-    background-color: var(--footer-color);
-    color: var(--paragraph-color);
-    padding: 20px;
-    text-align: center;
-    font-family: 'Bahnschrift', cursive;
-    height: 100px; 
-    position: flex; 
-    bottom: 0; 
-    width: 100%; 
 }
