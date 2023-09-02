@@ -360,6 +360,11 @@ p, li {
     .sidebar ul li {
         margin-bottom: 30px;
     }
+
+    body {
+        overflow:hidden;
+        overflow-y: auto;
+    }
 }
 
 @media (min-width: 1081px) {
