@@ -47,7 +47,7 @@ function createSnowflake() {
 
 
 // Create snowflakes at regular intervals
-setInterval(createSnowflake, 1500); 
+setInterval(createSnowflake, 2000); 
 
 // Call the function when the page loads
 window.onload = () => {
