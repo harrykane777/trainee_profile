@@ -17,43 +17,13 @@
 }
 
 .menu {
-    width: 100%;
-    background-color:#55b3e2; 
+    background-color: #55b3e2;
     color: var(--paragraph-color);
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
     height: 70px;
-}
-
-.menu button {
-    background-color: var(--button-color);
-    color: var(--paragraph-color);
-    width: 150px;
-    height: 75px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-family: 'Lobster', cursive; 
-    font-size: larger;
-    transition: background-color 0.15s ease;
-    
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.menu button:hover {
-    background-color: var(--button-hover-color);
-    font-size: 150%;
-    transition: all 0.3s ease;
-}
-
-.menu button:not(:hover) {
-    font-size: 120%;
-    transition: all 0.3s ease;
 }
 
 .menu ul {
@@ -70,6 +40,36 @@
 .menu a {
     color: var(--paragraph-color);
     text-decoration: none;
+}
+
+.menu button {
+    background-color: var(--button-color);
+    color: var(--paragraph-color);
+    width: 150px;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: larger;
+    transition: background-color 0.15s ease;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu button:hover {
+    background-color: var(--button-hover-color);
+    font-size: 150%;
+    transition: all 0.3s ease;
+}
+
+.menu button:not(:hover) {
+    font-size: 120%;
+    transition: all 0.3s ease;
 }
 
 .dropdown {
@@ -116,6 +116,7 @@
 }
 
 .title {
+    width: auto;
     background-color: var(--background-color-2);
     padding: 20px;
     text-align: center;
@@ -179,10 +180,12 @@ a:link {
 }
 
 .introduction {
+    width: auto;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    justify-content: center;
     color: var(--primary-color);
 }
 .introduction p {
@@ -194,6 +197,7 @@ a:link {
 .videoContainer {
     width: auto;
     text-align: center;
+    justify-content: center;
     padding: 20px;
     padding-bottom: 50px;
 }
@@ -376,6 +380,7 @@ p, li {
     
     #contactscontainer {
         display: flex;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
         margin-top: 20px;
@@ -403,6 +408,7 @@ p, li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     margin-top: 20px;
     overflow-y: auto;
 }
