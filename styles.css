@@ -189,6 +189,7 @@ a:link {
     font-family: 'Bahnschrift';
 }
 .videoContainer {
+    width: auto;
     text-align: center;
     padding: 20px;
     padding-bottom: 50px;
@@ -472,14 +473,14 @@ body {
 
 
 .aboutme-box {
-    width: 800px;
+    width: 65%;
     margin: 0 auto;
     padding: 10px;
     background-color: #80b3d7;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    height: 250px;
+    height: 50%;
 }
 
 .aboutme {
