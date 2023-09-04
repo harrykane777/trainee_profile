@@ -127,12 +127,23 @@
     background-color: var(--footer-color);
     color: var(--paragraph-color);
     padding: 20px;
-    width: 100%;
+    width: auto;
     display: block;
     justify-content: center;
     font-family: 'Bahnschrift', cursive;
     text-align: center;
     height: 100px;
+}
+
+.aboutme-box {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #80b3d7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    height: 65%;
 }
 
 ul.horizontal-list {
@@ -171,8 +182,8 @@ a:link {
 }
 
 .imageContainer {
-    width: 48%;
-    padding-top: 20%;
+    width: 50%;
+    padding-top: 10%;
     background-image: url('https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/09/28162922/FC-BARCELONA3.jpg');
     background-size: cover;
     background-position: center center;
@@ -193,13 +204,6 @@ a:link {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Bahnschrift';
-}
-.videoContainer {
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    padding-bottom: 50px;
 }
 
 .default {
@@ -246,6 +250,21 @@ p, li {
     list-style-position: inside;
 }
 
+.videoContainer {
+    text-align: center; 
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.videoContainer h3 {
+    margin: 0; 
+}
+.videoContainer img {
+    width: 95%;
+    max-width: 400px;
+    max-height: 630px;
+    border: 5px solid #1b0000;
+}
 
 @media (max-width: 1080px) {
     .introduction p {
@@ -356,7 +375,7 @@ p, li {
         padding: 0;
         margin: 0;
         list-style: none;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .sidebar li {
@@ -366,7 +385,7 @@ p, li {
     .sidebar a {
         color: var(--paragraph-color);
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .sidebar ul li {
@@ -388,11 +407,35 @@ p, li {
         overflow-y: auto;
     }
 
+    .footer {
+        padding: 3px;
+    }
+
+    .menu {
+        padding: 3px;
+    }
+    .aboutme-box {
+        width: 90%;
+    }
+}
+
+.videoContainer1 {
+    background: repeating-linear-gradient(to right, red, red 80px, blue 80px, blue 160px);
+    padding: 0 10px;
+    border: 0.001px solid rgb(177, 174, 174);
+    max-width: 100%; /* Set the desired width for the gradient */
+    margin: 0 auto; /* Center the container if needed */
 }
 
 @media (min-width: 1081px) {
     .menu .icon {
         display: none;
+    }
+
+    .videoContainer1 {
+        max-width: 49%;
+        border: 2px solid rgb(177, 174, 174);
+        border-radius: 5px;
     }
 
     .menu ul {
@@ -482,16 +525,7 @@ body {
 }
 
 
-.aboutme-box {
-    width: 65%;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #80b3d7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    height: 50%;
-}
+
 
 .aboutme {
     margin: 0;
@@ -514,10 +548,11 @@ p {
 
 
 .aboutme ul li {
-    font-size: 21px;
-    margin: 5px 0;
-    padding-left: 30px;
+    font-size: 20px;
+    margin: 15px 0;
     position: relative; 
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -531,7 +566,6 @@ p {
     position: absolute; 
     left: 0; 
     top: 2px; 
-    margin-right: 10px;
 }
 
 .menu button {
@@ -569,10 +603,21 @@ body {
     overflow-y: auto;
 }
 
+.videoContainer1 {
+    text-align: center; 
+    padding: 20px;
+    padding-bottom: 50px;
+}
 
+.videoContainer1 h3 {
+    margin: 0; 
+}
 
-
-
-
+.videoContainer1 img {
+    width: 95%;
+    max-width: 450px;
+    max-height: 650px;
+    border: 5px solid #1b0000;
+}
 
 
