@@ -17,6 +17,7 @@
 }
 
 .menu {
+    width: 100%;
     background-color:#55b3e2; 
     color: var(--paragraph-color);
     padding: 20px;
@@ -125,6 +126,7 @@
     background-color: var(--footer-color);
     color: var(--paragraph-color);
     padding: 20px;
+    width: 100%;
     display: block;
     justify-content: center;
     font-family: 'Bahnschrift', cursive;
@@ -175,6 +177,7 @@ a:link {
     background-position: center center;
     border: 5px solid #1b0000;
 }
+
 .introduction {
     padding: 20px;
     margin-left: auto;
@@ -499,8 +502,7 @@ p {
 .aboutme ul {
     list-style: none;
     padding: 0;
-    text-align: left;
-    margin-left: 80px; 
+    text-align: center;
 }
 
 
@@ -517,7 +519,7 @@ p {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/018/818/848/original/soccer-ball-cartoon-icon-png.png'); /* Specify the URL of your soccer ball image */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/018/818/848/original/soccer-ball-cartoon-icon-png.png'); 
     background-size: contain;
     position: absolute; 
     left: 0; 
@@ -526,7 +528,6 @@ p {
 }
 
 .menu button {
-
     margin-right: 35px;
     margin-left: 35px;
 }
