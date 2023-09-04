@@ -409,10 +409,20 @@ p, li {
 
     .footer {
         padding: 3px;
+        height: 12%;
     }
 
     .menu {
         padding: 3px;
+        height: 65px;
+    }
+
+    .title {
+        padding: 0.01%;
+
+    }
+    .title h1 {
+        font-size: 35px;
     }
     .aboutme-box {
         width: 90%;
@@ -453,7 +463,7 @@ p, li {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
     overflow-y: auto;
 }
 
@@ -472,7 +482,7 @@ p, li {
 }
 
 #contactscontainer img {
-    width: 120px; 
+    width: 125px; 
     height: auto;
 }
 
@@ -482,36 +492,6 @@ p, li {
 }
 
 
-#contactscontainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-}
-
-#contactscontainer a {
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333;
-    transition: transform 0.2s ease-in-out;
-}
-
-#contactscontainer a:hover {
-    transform: scale(1.2); 
-}
-
-#contactscontainer img {
-    width: 130px; 
-    height: auto;
-}
-
-.hovermsg {
-    margin-top: 10px;
-    font-size: 18px; 
-}
 
 body {
     font-size: 18px;
